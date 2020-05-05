@@ -1,5 +1,4 @@
-import { expect, haveResource } from '@aws-cdk/assert';
-import { Stack } from '@aws-cdk/core';
+import { expect } from '@aws-cdk/assert';
 import '@aws-cdk/assert/jest';
 
 test('basic', () => {

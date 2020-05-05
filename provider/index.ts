@@ -2,10 +2,10 @@ import { Client } from 'elasticsearch';
 import * as HttpAwsEs from 'http-aws-es';
 
 const getClient = (domainEndpoint: string): Client => {
-  return new Client({
-    hosts: [`https://${domainEndpoint}`],
-    connectionClass: HttpAwsEs,
-  });
+    return new Client({
+        hosts: [`https://${domainEndpoint}`],
+        connectionClass: HttpAwsEs,
+    });
 };
 
 interface ResourceProperties {
@@ -38,10 +38,10 @@ interface Response {
 
 type Event = CreateEvent | UpdateEvent | DeleteEvent;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ElasticsearchClusterSettings = Record<string, any>;
 
 const handleCreate = async (event: CreateEvent): Promise<Response> => {
-
     const esDomainEndpoint = event.ResourceProperties.EsDomainEndpoint;
     const clusterSettings = JSON.parse(event.ResourceProperties.ClusterSettingsJson) as ElasticsearchClusterSettings;
 
