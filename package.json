@@ -1,0 +1,58 @@
+{
+    "name": "es-settings-cdk",
+    "version": "1.0.0",
+    "description": "Apply cluster settings to ES domains",
+    "license": "MIT",
+    "author": {
+        "name": "Isotoma Limited",
+        "email": "hello@isotoma.com",
+        "url": "https://isotoma.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/isotoma/es-settings-cdk"
+    },
+    "keywords": [
+        "cdk",
+        "elasticsearch"
+    ],
+    "scripts": {
+        "test": "jest",
+        "tsc": "tsc",
+        "clean": "rm -rf build/",
+        "compile": "npm run clean && npm run -- tsc --outDir build/ && (cd provider && npm install && npm run compile) && cp -R ./provider/build/ ./build/provider/ && cp package.json README.md ./build/",
+        "version": "auto-changelog --template ./changelog_template.hbs -p && git add CHANGELOG.md",
+        "lint": "eslint 'index.ts' 'test/**/*.ts' --quiet --fix",
+        "lint-check": "eslint 'index.ts' 'test/**/*.ts' --max-warnings 0"
+    },
+    "peerDependencies": {
+        "@aws-cdk/aws-lambda": "^1.21.1",
+        "@aws-cdk/aws-iam": "^1.21.1",
+        "@aws-cdk/aws-elasticsearch": "^1.21.1",
+        "@aws-cdk/core": "^1.21.1",
+        "@aws-cdk/custom-resources": "^1.21.1",
+        "@aws-cdk/aws-cloudformation": "^1.21.1",
+        "typescript": ">=3.0.0"
+    },
+    "devDependencies": {
+        "@aws-cdk/assert": "^1.21.1",
+        "auto-changelog": "^1.16.2",
+        "@aws-cdk/aws-lambda": "^1.21.1",
+        "@aws-cdk/aws-iam": "^1.21.1",
+        "@aws-cdk/aws-elasticsearch": "^1.21.1",
+        "@aws-cdk/core": "^1.21.1",
+        "@aws-cdk/custom-resources": "^1.21.1",
+        "@aws-cdk/aws-cloudformation": "^1.21.1",
+        "typescript": ">=3.0.0",
+        "jest": "24.9.0",
+        "ts-jest": "24.1.0",
+        "eslint": "6.8.0",
+        "eslint-config-prettier": "6.9.0",
+        "eslint-plugin-prettier": "3.1.2",
+        "prettier": "1.19.1",
+        "@types/jest": "~24.0.22",
+        "@typescript-eslint/eslint-plugin": "2.16.0",
+        "@typescript-eslint/parser": "2.16.0",
+        "@types/node": ">=10"
+    }
+}
