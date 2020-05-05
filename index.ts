@@ -6,6 +6,7 @@ import * as cdk from '@aws-cdk/core';
 import * as customResource from '@aws-cdk/custom-resources';
 import * as path from 'path';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type ElasticsearchClusterSettings = Record<string, any>;
 
 export interface ElasticsearchSettingsProps {
@@ -44,7 +45,6 @@ class ElasticsearchSettingsProvider extends cdk.Construct {
 }
 
 export class ElasticsearchSettings extends cdk.Construct {
-
     constructor(scope: cdk.Construct, id: string, props: ElasticsearchSettingsProps) {
         super(scope, id);
 
