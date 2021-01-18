@@ -1,5 +1,11 @@
 ### Changelog
 
+#### [1.0.1](https://github.com/isotoma/es-settings-cdk/compare/1.0.0...1.0.1)
+
+> 18 January 2021
+
+- Rework CI to use Github actions, not CircleCI [`#2`](https://github.com/isotoma/es-settings-cdk/pull/2)
+
 #### 1.0.0
 
 > 5 May 2020
