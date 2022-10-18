@@ -16,7 +16,7 @@
     },
     "dependencies": {
         "@types/node": ">=10",
-        "elasticsearch": "^16.7.1",
+        "elasticsearch": "^15.0.0",
         "http-aws-es": "^6.0.0"
     },
     "devDependencies": {
