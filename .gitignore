@@ -5,9 +5,6 @@
 # No build
 build/
 
-# No package-lock.json
-package-lock.json
-
 # Allow jest config
 !jest.config.js
 
