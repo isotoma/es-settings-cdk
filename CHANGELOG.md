@@ -1,5 +1,15 @@
 ### Changelog
 
+#### [1.1.0](https://github.com/isotoma/es-settings-cdk/compare/1.0.1...1.1.0)
+
+> 25 October 2022
+
+- Use node 14 for custom resource Lambda [`#12`](https://github.com/isotoma/es-settings-cdk/pull/12)
+- CDK v2 support [`#11`](https://github.com/isotoma/es-settings-cdk/pull/11)
+- Update node version for dev [`#5`](https://github.com/isotoma/es-settings-cdk/pull/5)
+- Fix CI [`#4`](https://github.com/isotoma/es-settings-cdk/pull/4)
+- Remove CircleCI config [`#3`](https://github.com/isotoma/es-settings-cdk/pull/3)
+
 #### [1.0.1](https://github.com/isotoma/es-settings-cdk/compare/1.0.0...1.0.1)
 
 > 18 January 2021
