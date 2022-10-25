@@ -22,8 +22,8 @@
         "clean": "rm -rf build/",
         "compile": "npm run clean && npm run -- tsc --outDir build/ && (cd provider && npm install && npm run compile) && cp -R ./provider/build/ ./build/provider/ && cp package.json README.md ./build/",
         "version": "auto-changelog --template ./changelog_template.hbs -p && git add CHANGELOG.md",
-        "lint": "eslint 'index.ts' 'test/**/*.ts' --quiet --fix",
-        "lint-check": "eslint 'index.ts' 'test/**/*.ts' --max-warnings 0"
+        "lint": "eslint 'index.ts' cdkv1.ts cdkv2.ts 'test/**/*.ts' --quiet --fix",
+        "lint-check": "eslint 'index.ts' cdkv1.ts cdkv2.ts 'test/**/*.ts' --max-warnings 0"
     },
     "peerDependencies": {
         "@aws-cdk/aws-lambda": "^1.21.1",
@@ -31,7 +31,35 @@
         "@aws-cdk/aws-elasticsearch": "^1.21.1",
         "@aws-cdk/core": "^1.21.1",
         "@aws-cdk/custom-resources": "^1.21.1",
-        "@aws-cdk/aws-cloudformation": "^1.21.1"
+        "@aws-cdk/aws-cloudformation": "^1.21.1",
+        "aws-cdk-lib": "^2.0.0",
+        "constructs": "^10.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@aws-cdk/aws-lambda": {
+            "optional": true
+        },
+        "@aws-cdk/aws-iam": {
+            "optional": true
+        },
+        "@aws-cdk/aws-elasticsearch": {
+            "optional": true
+        },
+        "@aws-cdk/core": {
+            "optional": true
+        },
+        "@aws-cdk/custom-resources": {
+            "optional": true
+        },
+        "@aws-cdk/aws-cloudformation": {
+            "optional": true
+        },
+        "aws-cdk-lib": {
+            "optional": true
+        },
+        "constructs": {
+            "optional": true
+        }
     },
     "devDependencies": {
         "@aws-cdk/assert": "1.32.0",
@@ -42,6 +70,8 @@
         "@aws-cdk/core": "1.32.0",
         "@aws-cdk/custom-resources": "1.32.0",
         "@aws-cdk/aws-cloudformation": "1.32.0",
+        "aws-cdk-lib": "^2.15.0",
+        "constructs": "^10.0.0",
         "typescript": ">=3.0.0",
         "jest": "24.9.0",
         "ts-jest": "24.1.0",
