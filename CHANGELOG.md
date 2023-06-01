@@ -1,5 +1,11 @@
 ### Changelog
 
+### [2.0.0](https://github.com/isotoma/es-settings-cdk/compare/1.1.0...2.0.0)
+
+> 1 June 2023
+
+- Change index exports to cdkv2 [`#15`](https://github.com/isotoma/es-settings-cdk/pull/15)
+
 #### [1.1.0](https://github.com/isotoma/es-settings-cdk/compare/1.0.1...1.1.0)
 
 > 25 October 2022
