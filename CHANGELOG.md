@@ -1,5 +1,11 @@
 ### Changelog
 
+### [3.0.0](https://github.com/isotoma/es-settings-cdk/compare/2.0.0...3.0.0)
+
+> 31 August 2023
+
+- Remove CDK v1 support [`#16`](https://github.com/isotoma/es-settings-cdk/pull/16)
+
 ### [2.0.0](https://github.com/isotoma/es-settings-cdk/compare/1.1.0...2.0.0)
 
 > 1 June 2023
