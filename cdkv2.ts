@@ -30,7 +30,7 @@ class ElasticsearchSettingsProvider extends Construct {
         this.provider = new customResource.Provider(this, 'es-settings-provider', {
             onEventHandler: new lambda.Function(this, 'es-settings-event', {
                 code: lambda.Code.fromAsset(path.join(__dirname, 'provider')),
-                runtime: lambda.Runtime.NODEJS_14_X,
+                runtime: lambda.Runtime.NODEJS_16_X,
                 handler: 'index.onEvent',
                 timeout: cdk.Duration.minutes(5),
                 initialPolicy: [
