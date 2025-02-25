@@ -1,5 +1,14 @@
 ### Changelog
 
+#### [3.2.0](https://github.com/isotoma/es-settings-cdk/compare/3.1.0...3.2.0)
+
+> 25 February 2025
+
+- Update to node 20 [`#18`](https://github.com/isotoma/es-settings-cdk/pull/18)
+- Add docs for how to release a new version [`#19`](https://github.com/isotoma/es-settings-cdk/pull/19)
+- Fix build [`#20`](https://github.com/isotoma/es-settings-cdk/pull/20)
+- Revert "Update to node 20" [`f33d778`](https://github.com/isotoma/es-settings-cdk/commit/f33d77864ec0086d487d56df371ba5c24995a1bb)
+
 #### [3.1.0](https://github.com/isotoma/es-settings-cdk/compare/3.0.0...3.1.0)
 
 > 31 August 2023
