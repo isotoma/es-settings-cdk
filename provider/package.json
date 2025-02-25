@@ -15,11 +15,11 @@
         "lint-check": "eslint 'index.ts' 'tests/**/*.ts' --max-warnings 0"
     },
     "dependencies": {
-        "@types/node": "^16.18.46",
         "elasticsearch": "^15.0.0",
         "http-aws-es": "^6.0.0"
     },
     "devDependencies": {
+        "@types/node": "16.18.46",
         "@types/http-aws-es": "^6.0.0",
         "@types/jest": "~24.0.22",
         "@typescript-eslint/eslint-plugin": "2.16.0",
@@ -30,6 +30,6 @@
         "jest": "~24.9.0",
         "prettier": "1.19.1",
         "ts-jest": "24.1.0",
-        "typescript": "^3.9.10"
+        "typescript": "3.9.10"
     }
 }
